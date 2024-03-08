@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" type="image/ico" href="assets/tile/ball_small.png">
+    <title>Bounce Original</title>
+    <style>
+        @font-face {
+            font-family: 'GameFont';
+            src: url('assets/fonts/YanoneKaffeesatz-Bold.ttf');
+        }
+
+        body {
+            background-color: #f1f1f1;
+            margin: 0;
+            /* Remove default margin */
+        }
+
+        #gameArea {
+            position: absolute;
+            width: 640px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        canvas {
+            display: block;
+            font-family: 'GameFont';
+        }
+
+        .game-finished {
+            width: 480px;
+            height: 270px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .level-menu {
+            width: 640px;
+            height: 360px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .gbar {
+            width: 630px;
+            height: 40px;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+
+footer {
+    background-color: #476481;
+    color: #ffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.15);
+}
+
+footer a {
+    color: #139df9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #2980b9;
+}
+
+    </style>
+</head>
+
+<body>
+    <div id="gameArea"></div>
+
+            <script src="js/tile.js"></script>
+            <script src="js/sprite.js"></script>
+            <script src="js/input.js"></script>
+            <script src="js/entity.js"></script>
+            <script src="js/enemy.js"></script>
+            <script src="js/player.js"></script>
+            <script src="js/canvas.js"></script>
+            <script src="js/map.js"></script>
+            <script src="js/level.js"></script>
+            <script src="js/game.js"></script>
+            <script src="js/main.js"></script>
+
+    <footer>
+        <p>Game created by <a href="https://www.linkedin.com/in/nischal108/"> Nischal Bhattarai</a> | Follow me on <a href="https://twitter.com/nischal_108"
+                target="_blank">Twitter</a> | Code at <a href="https://github.com/nischal108"
+                target="_blank">Github</a></p>
+    </footer>
+</body>
+
+</html>
